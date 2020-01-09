@@ -53,10 +53,7 @@ public class CustomerService {
 		return cust;
 	}
 	
-	/*public List<Customer> getByGoodsId(String goodsId){
-		List<Customer> customer=new ArrayList<>();
-		customer=this.customerRepository.findByGoodsId(goodsId);
-		return customer;
-	}*/
-	
+	public Page<Customer> findBySearch(String name, Pageable pageable){
+		return customerRepository.findByName(name, pageable);
+	}
 }

@@ -49,7 +49,7 @@ public class CustomerController {
 		return "Customer Deleted Successfully";
 	}
 	
-	@GetMapping(value="/customers")
+	@GetMapping(value="/customerpage")
 	public Page<Customer> fetchByPage(Pageable pageable){
 		return customerService.findAllByPage(pageable);
 	}
@@ -57,5 +57,10 @@ public class CustomerController {
 	@GetMapping(value="/cust")
 	public List<Customer> getCustomerByMembershipId(@RequestParam String membershipId) {
 		return customerService.getByMembershipId(membershipId);
+	}
+	
+	@GetMapping(value="/customers")
+	public Page<Customer>fetchCustomer(String name,Pageable pageable){
+		return customerService.findBySearch(name, pageable);
 	}
 }
