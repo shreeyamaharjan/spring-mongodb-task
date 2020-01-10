@@ -63,4 +63,9 @@ public class CustomerController {
 	public Page<Customer>fetchCustomer(String name,Pageable pageable){
 		return customerService.findBySearch(name, pageable);
 	}
+	
+	@GetMapping(value="/address")
+	public Page<Customer>searchByAddress(String address, Pageable pageable){
+		return customerService.findByAddress(address, pageable);
+	}
 }

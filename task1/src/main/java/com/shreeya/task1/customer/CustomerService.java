@@ -56,4 +56,8 @@ public class CustomerService {
 	public Page<Customer> findBySearch(String name, Pageable pageable){
 		return customerRepository.findByName(name, pageable);
 	}
+	
+	public Page<Customer> findByAddress(String address,Pageable pageable){
+		return customerRepository.findByAddress(address, pageable);
+	}
 }
