@@ -35,7 +35,4 @@ public class purchaseController {
 	public List<purchaseHistory> getByGoodsId(@RequestParam String goodsId) {
 		return purchaseservice.getByGoodsId(goodsId);
 	}
-	
-	
-	
 }

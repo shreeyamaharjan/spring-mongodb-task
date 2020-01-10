@@ -11,12 +11,11 @@ public class purchaseService {
 
 	@Autowired
 	private purchaseRepository purchaserepository;
-	
 
 	List<purchaseHistory> purchase=new ArrayList<>();
 	public List <purchaseHistory> getAllPurchases(){
 		return purchaserepository.findAll();
-		//return purchase;
+		
 	}
 	
 	public purchaseHistory addPurchase(purchaseHistory purchase) {
