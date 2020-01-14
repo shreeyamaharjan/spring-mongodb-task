@@ -9,6 +9,10 @@ public class purchaseHistory {
 	private String goodsId;
 	private int quantity;
 	
+	public purchaseHistory() {
+		super();
+	}
+
 	public purchaseHistory(String customerId, String goodsId, int quantity) {
 		super();
 		this.customerId = customerId;
