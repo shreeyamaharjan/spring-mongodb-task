@@ -1,10 +1,12 @@
 package com.shreeya.task1.purchase;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="purchasehistory")
 public class purchaseHistory {
 
+	@Id
 	private String customerId;
 	private String goodsId;
 	private int quantity;
@@ -38,5 +40,9 @@ public class purchaseHistory {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "purchaseHistory [customerId=" + customerId + ", goodsId=" + goodsId + ", quantity=" + quantity + "]";
+	}
 }

@@ -11,44 +11,56 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/goods")
 public class GoodsController {
 	
 	@Autowired
     private GoodsService goodsService;
 	
-	@PostMapping(value="/goods/save")
-	public String creategoods(@RequestBody Goods goods) {
-		goodsService.addgoods(goods);
-		return "goods created successfully ";
+	
+	
+	
+	/*public List<Goods> fetchByPage(@RequestParam Integer page,@RequestParam Integer size){
+		return goodsService.getAllGoodsPaginated(page, size);
+	}*/
+	
+	@GetMapping("/paginate")
+	public Page<Goods> fetchByPage(Pageable pageable){
+		return goodsService.findAllByPage(pageable);
 	}
 	
-	@GetMapping(value="/goods")
-	public List<Goods> getGoods() {
+	@GetMapping()
+	public List<Goods> getAllGoods() {
 		return goodsService.getAllGoods();
 	}
 	
-	@GetMapping(value="/goods/{goodsId}")
+	@PostMapping()
+	public Goods createGoods(@RequestBody Goods goods) {
+		return goodsService.saveGoods(goods);
+	}
+	@GetMapping("/{goodsId}")
 	public Goods getGoodsById(@PathVariable String goodsId) {
-		return goodsService.getGoods(goodsId);
+		return goodsService.findOneById(goodsId);
 	}
 	
-	@PutMapping(value="/goods/update")
-	public void updateGoods(@RequestBody Goods goods) {
-		goodsService.updategoods(goods);
+	@DeleteMapping("/{goodsId}")
+	public void deleteGoods(@PathVariable String goodsId) {
+		goodsService.deleteGoods(goodsId);
 	}
 	
-	@DeleteMapping(value="/goods/{goodsId}")
-	public String deleteGoods(@PathVariable String goodsId){
-		goodsService.deletegoods(goodsId);
-		return "Goods deleted";
+	@PutMapping("/{goodsId}")
+	public Goods updateGoods(@RequestBody Goods goods) {
+		return goodsService.updateGoods(goods);
 	}
 	
-	@GetMapping(value="/good")
-	public Page<Goods> fetchByPage(Pageable pageable){
-		return goodsService.findAllByPage(pageable);
+	@GetMapping("/range")
+	public List<Goods> findByRate(@RequestParam Integer lowerBound,@RequestParam Integer upperBound){
+		return goodsService.findByRateRange(lowerBound, upperBound);
 	}
 
 }

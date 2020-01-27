@@ -12,59 +12,61 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/customer")
 public class CustomerController {
 
 	@Autowired
 	private CustomerService customerService;
 	
-	@GetMapping(value="/customer")
+	@GetMapping()
 	public List<Customer> getCustomers(){
 		return customerService.getAllCustomer();
 	}
 	
-	@GetMapping(value="/customer/{id}")
+	@GetMapping(value="/{id}")
 	public Optional<Customer> getCustomerById(@PathVariable String id) {
 		return customerService.getCustomer(id);
 	}
 	
-	@PostMapping(value="/customer/create")
-	public String createCustomer(@RequestBody Customer customer) {
-		customerService.saveCustomer(customer);
-		return "Customer Added Successfully";
+	@PostMapping()
+	public Customer createCustomer(@RequestBody Customer customer) {
+		return customerService.saveCustomer(customer);
+		//return "Customer Added Successfully";
 	}
 	
-	@PutMapping(value="/customer/update")
-	public String updateCustomer(@RequestBody Customer customer) {
-		customerService.updateCustomer(customer);
-		return "Customer Updated Successfully";
+	@PutMapping()
+	public Customer updateCustomer(@RequestBody Customer customer) {
+		return customerService.updateCustomer(customer);
+		//return "Customer Updated Successfully";
 	}
 	
-	@DeleteMapping(value="/customer/delete/{id}")
+	@DeleteMapping(value="/{id}")
 	public String deleteCustomer(@PathVariable String id) {
 		customerService.deleteCustomer(id);
 		return "Customer Deleted Successfully";
 	}
 	
-	@GetMapping(value="/customerpage")
+	/*@GetMapping("/paginate")
 	public Page<Customer> fetchByPage(Pageable pageable){
 		return customerService.findAllByPage(pageable);
-	}
+	}*/
 	
-	@GetMapping(value="/cust")
+	@GetMapping("/membership")
 	public List<Customer> getCustomerByMembershipId(@RequestParam String membershipId) {
 		return customerService.getByMembershipId(membershipId);
 	}
 	
-	@GetMapping(value="/customers")
+	@GetMapping(value="/namepaginate")
 	public Page<Customer>fetchCustomer(String name,Pageable pageable){
 		return customerService.findBySearch(name, pageable);
 	}
 	
-	@GetMapping(value="/address")
+	@GetMapping(value="/addresspaginate")
 	public Page<Customer>searchByAddress(String address, Pageable pageable){
 		return customerService.findByAddress(address, pageable);
 	}

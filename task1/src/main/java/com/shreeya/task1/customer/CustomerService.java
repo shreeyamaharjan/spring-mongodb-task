@@ -27,26 +27,22 @@ public class CustomerService {
 			return customer;
 	}
 	
-	public void saveCustomer(Customer customer) {
-		customerRepository.save(customer);
+	public Customer saveCustomer(Customer customer) {
+		return customerRepository.save(customer);
 	}
 	
-	public void updateCustomer(Customer customer) {
-		for(Customer c:customers) {
-			if(c.getId()==customer.getId()) {
-				c.setName(customer.getName());
-			}
-		}
+	public Customer updateCustomer(Customer customer) {
+		return customerRepository.save(customer);
 	}
 	
 	public void deleteCustomer(String id) {
 		customerRepository.deleteById(id);
 	}
 	
-	public Page<Customer> findAllByPage(Pageable pageable){
+	/*public Page<Customer> findAllByPage(Pageable pageable){
 		return customerRepository.findAll(pageable);
 	}
-	
+	*/
 	public List<Customer> getByMembershipId(String membershipId) {
 		List<Customer> cust=new ArrayList<>();
 		cust=this.customerRepository.findByMembershipId(membershipId);

@@ -13,12 +13,12 @@ public class purchaseService {
 	private purchaseRepository purchaserepository;
 
 	List<purchaseHistory> purchase=new ArrayList<>();
-	public List <purchaseHistory> getAllPurchases(){
+	public List <purchaseHistory> getAllpurchases(){
 		return purchaserepository.findAll();
 		
 	}
 	
-	public purchaseHistory addPurchase(purchaseHistory purchase) {
+	public purchaseHistory addpurchase(purchaseHistory purchase) {
 		
 		 return purchaserepository.save(purchase);
 	}
@@ -35,5 +35,7 @@ public class purchaseService {
 		return history;
 	}
 	
-	
+	public void deletepurchase(String goodsId) {
+		purchaserepository.deleteById(goodsId);
+	}
 }

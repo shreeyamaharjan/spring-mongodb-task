@@ -1,12 +1,14 @@
 package com.shreeya.task1.goods;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+
 import org.springframework.stereotype.Service;
 
 
@@ -17,35 +19,47 @@ public class GoodsService {
 	@Autowired
 	private GoodsRepository goodsRepository;
 	
-	public List<Goods> getAllGoods(){
-		List<Goods> goods=new ArrayList<>();
-		goodsRepository.findAll().forEach(goods::add);
-		return goods;
-	}
+	@Autowired
+	private MongoTemplate mongoTemplate;
 	
-	public Goods getGoods(String goodsId) {
-		 Optional<Goods> good=goodsRepository.findById(goodsId) ;
-		 if(good.isPresent()){
-			 	return good.get();
-		 	}
-		 return null;
-	}
 	
-	public void addgoods(Goods goods) {
-		goodsRepository.save(goods);
-	}
-	
-	public void updategoods(Goods goods) {
-		goodsRepository.save(goods);
-	}
-	
-	public void deletegoods(String goodsId) {
-		goodsRepository.deleteById(goodsId);
-	}
-
 	public Page<Goods>findAllByPage(Pageable pageable){
 		return goodsRepository.findAll(pageable);
 	}
+	
+	public Goods saveGoods(Goods goods ) {
+		return mongoTemplate.save(goods);
+	}
+	
+	public List<Goods> getAllGoods(){
+		return mongoTemplate.findAll(Goods.class);
+	}
+	
+	public Goods findOneById(String goodsId) {
+		Query query=new Query();
+		query.addCriteria(Criteria.where("goodsId").is(goodsId));
+		return mongoTemplate.findOne(query, Goods.class);
+	}
+	
+	public void deleteGoods(String goodsId) {
+		Query query =new Query();
+		query.addCriteria(Criteria.where("goodsId").is(goodsId));
+		mongoTemplate.remove(query,Goods.class);
+	}
+	
+	public Goods updateGoods(Goods goods) {
+		return mongoTemplate.save(goods);
+	}
+
+	
+	
+	public List<Goods> findByRateRange(int lowerBound,int upperBound){
+		Query query=new Query();
+		query.addCriteria(Criteria.where("rate").gt(lowerBound)
+		     .andOperator(Criteria.where("rate").lt(upperBound)));
+		return mongoTemplate.find(query, Goods.class);
+	}
+
 	
 }
 

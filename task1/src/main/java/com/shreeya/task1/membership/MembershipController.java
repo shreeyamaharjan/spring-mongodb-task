@@ -11,43 +11,45 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/membership")
 public class MembershipController {
 
 	@Autowired
 	private MembershipService membershipService;
 	
-	@GetMapping(value="/membership")
+	@GetMapping()
 	public List<Membership> getMembership(){
 		return membershipService.getAllMembership();
 	}
 	
-	@GetMapping(value="/membership/{membershipId}")
+	@GetMapping(value="/{membershipId}")
 	public Membership getMembershipById(@PathVariable String membershipId) {
 		return membershipService.getMembership(membershipId);
 	}
 	
-	@PostMapping(value="/membership/save")
+	@PostMapping()
 	public String saveMembership(@RequestBody Membership membership) {
 		membershipService.saveMembership(membership);
 		return "Membership Added";
 	}
 	
-	@PutMapping(value="/membership/update")
+	@PutMapping()
 	public String updateMembership(@RequestBody Membership membership) {
 		membershipService.updateMembership(membership);
 		return "Updated";
 	}
 	
-	@DeleteMapping(value="/membership/delete/{membershipId}")
+	@DeleteMapping(value="/{membershipId}")
 	public String deleteMembership(@PathVariable String membershipId) {
 		membershipService.deleteMembership(membershipId);
 		return "Deleted";
 	}
 	
-	@GetMapping(value="/memberships")
+	@GetMapping("/paginate")
 	public Page<Membership> fetchByPage(Pageable pageable){
 		return membershipService.findByPage(pageable);
 	}
