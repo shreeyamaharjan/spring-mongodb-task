@@ -15,19 +15,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mongodb.client.result.UpdateResult;
+
 @RestController
 @RequestMapping("/goods")
 public class GoodsController {
 	
 	@Autowired
     private GoodsService goodsService;
-	
-	
-	
-	
-	/*public List<Goods> fetchByPage(@RequestParam Integer page,@RequestParam Integer size){
-		return goodsService.getAllGoodsPaginated(page, size);
-	}*/
 	
 	@GetMapping("/paginate")
 	public Page<Goods> fetchByPage(Pageable pageable){
@@ -54,7 +49,7 @@ public class GoodsController {
 	}
 	
 	@PutMapping("/{goodsId}")
-	public Goods updateGoods(@RequestBody Goods goods) {
+	public UpdateResult updateGoods(@RequestBody Goods goods) {
 		return goodsService.updateGoods(goods);
 	}
 	

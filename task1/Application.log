@@ -2142,3 +2142,307 @@ com.shreeya.task1.goods.GoodsController#fetchByPage(Integer, Integer) mapped.
 2020-01-27 15:15:52.700  INFO 5348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
 2020-01-27 15:15:52.866  INFO 5348 --- [http-nio-8080-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:27}] to localhost:27017
 2020-01-27 15:16:50.683  WARN 5348 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'lowerBound' is not present]
+2020-01-28 10:01:49.088  INFO 8628 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 8628 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:01:49.199  INFO 8628 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:01:49.257  INFO 9692 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 9692 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:01:49.389  INFO 9692 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:01:51.322  INFO 8628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:01:51.327  INFO 9692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:01:51.461  INFO 8628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:01:51.465  INFO 9692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:01:52.458  INFO 8628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:01:52.489  INFO 8628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:01:52.490  INFO 8628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:01:52.567  INFO 9692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:01:52.592  INFO 9692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:01:52.593  INFO 9692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:01:52.900  INFO 9692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:01:52.901  INFO 9692 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3304 ms
+2020-01-28 10:01:52.903  INFO 8628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:01:52.904  INFO 8628 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3557 ms
+2020-01-28 10:01:53.885  INFO 8628 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:01:53.886  INFO 8628 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:01:53.904  INFO 9692 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:01:53.904  INFO 9692 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:01:54.002  INFO 8628 --- [cluster-ClusterId{value='5e2fb5b55954745e37d63255', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:151}] to localhost:27017
+2020-01-28 10:01:54.022  INFO 8628 --- [cluster-ClusterId{value='5e2fb5b55954745e37d63255', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4835400}
+2020-01-28 10:01:54.029  INFO 8628 --- [cluster-ClusterId{value='5e2fb5b55954745e37d63255', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:01:54.074  INFO 9692 --- [cluster-ClusterId{value='5e2fb5b51742e2154a3a89a6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:152}] to localhost:27017
+2020-01-28 10:01:54.082  INFO 9692 --- [cluster-ClusterId{value='5e2fb5b51742e2154a3a89a6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6442000}
+2020-01-28 10:01:54.085  INFO 9692 --- [cluster-ClusterId{value='5e2fb5b51742e2154a3a89a6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:01:54.990  INFO 8628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:01:55.002  INFO 9692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:01:55.536  INFO 8628 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-01-28 10:01:55.553  INFO 8628 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-28 10:01:55.561 ERROR 8628 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-01-28 10:01:55.563  INFO 8628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:01:55.578  INFO 9692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:01:55.580  INFO 9692 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 7.609 seconds (JVM running for 9.097)
+2020-01-28 10:02:16.532  INFO 9692 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:02:16.533  INFO 9692 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:02:16.542  INFO 9692 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-01-28 10:02:16.740  INFO 9692 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:153}] to localhost:27017
+2020-01-28 10:02:49.852  WARN 9692 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'goodsName' for method parameter of type String]
+2020-01-28 10:03:12.667  WARN 9692 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'goodsName' for method parameter of type String]
+2020-01-28 10:03:21.428  WARN 9692 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'goodsName' for method parameter of type String]
+2020-01-28 10:19:49.375  INFO 9692 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 10:19:49.377  INFO 9692 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:19:49.382  INFO 9692 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:153}] to localhost:27017 because the pool has been closed.
+2020-01-28 10:19:52.949  INFO 12376 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 12376 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:19:52.957  INFO 12376 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:19:53.636  INFO 12376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:19:53.699  INFO 12376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:19:54.063  INFO 12376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:19:54.071  INFO 12376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:19:54.071  INFO 12376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:19:54.145  INFO 12376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:19:54.146  INFO 12376 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1150 ms
+2020-01-28 10:19:54.577  INFO 12376 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:19:54.577  INFO 12376 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:19:54.628  INFO 12376 --- [cluster-ClusterId{value='5e2fb9ee0a198c6277a11fc4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:154}] to localhost:27017
+2020-01-28 10:19:54.633  INFO 12376 --- [cluster-ClusterId{value='5e2fb9ee0a198c6277a11fc4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2672600}
+2020-01-28 10:19:54.634  INFO 12376 --- [cluster-ClusterId{value='5e2fb9ee0a198c6277a11fc4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:19:55.089  INFO 12376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:19:55.226  INFO 12376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:19:55.228  INFO 12376 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.661 seconds (JVM running for 3.744)
+2020-01-28 10:19:59.429  INFO 12376 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:19:59.429  INFO 12376 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:19:59.435  INFO 12376 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-01-28 10:19:59.572  INFO 12376 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:155}] to localhost:27017
+2020-01-28 10:26:49.768  INFO 12376 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 10:26:49.770  INFO 12376 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:26:49.773  INFO 12376 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:155}] to localhost:27017 because the pool has been closed.
+2020-01-28 10:26:53.082  INFO 7576 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 7576 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:26:53.086  INFO 7576 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:26:53.774  INFO 7576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:26:53.833  INFO 7576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:26:54.176  INFO 7576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:26:54.184  INFO 7576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:26:54.185  INFO 7576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:26:54.268  INFO 7576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:26:54.269  INFO 7576 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1142 ms
+2020-01-28 10:26:54.702  INFO 7576 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:26:54.702  INFO 7576 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:26:54.745  INFO 7576 --- [cluster-ClusterId{value='5e2fbb923e4b32407427eae5', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:156}] to localhost:27017
+2020-01-28 10:26:54.750  INFO 7576 --- [cluster-ClusterId{value='5e2fbb923e4b32407427eae5', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2774800}
+2020-01-28 10:26:54.751  INFO 7576 --- [cluster-ClusterId{value='5e2fbb923e4b32407427eae5', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:26:55.046  WARN 7576 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodsController': Unsatisfied dependency expressed through field 'goodsService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService' defined in file [C:\Users\shree\git\spring-mongodb-task\task1\bin\main\com\shreeya\task1\goods\GoodsService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shreeya.task1.goods.GoodsService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "public", . expected
+
+2020-01-28 10:26:55.051  INFO 7576 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-01-28 10:26:55.061  INFO 7576 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-28 10:26:55.134 ERROR 7576 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodsController': Unsatisfied dependency expressed through field 'goodsService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService' defined in file [C:\Users\shree\git\spring-mongodb-task\task1\bin\main\com\shreeya\task1\goods\GoodsService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shreeya.task1.goods.GoodsService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "public", . expected
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at com.shreeya.task1.Task1Application.main(Task1Application.java:10) [main/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService' defined in file [C:\Users\shree\git\spring-mongodb-task\task1\bin\main\com\shreeya\task1\goods\GoodsService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shreeya.task1.goods.GoodsService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "public", . expected
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shreeya.task1.goods.GoodsService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "public", . expected
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:213) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 30 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "public", . expected
+
+	at com.shreeya.task1.goods.GoodsService.<init>(GoodsService.java:36) ~[main/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_192]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_192]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:200) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 32 common frames omitted
+
+2020-01-28 10:35:26.090  INFO 6748 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 6748 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:35:26.097  INFO 6748 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:35:26.605  INFO 6748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:35:26.667  INFO 6748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:35:27.024  INFO 6748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:35:27.032  INFO 6748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:35:27.032  INFO 6748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:35:27.104  INFO 6748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:35:27.105  INFO 6748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 970 ms
+2020-01-28 10:35:27.541  INFO 6748 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:35:27.541  INFO 6748 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:35:27.585  INFO 6748 --- [cluster-ClusterId{value='5e2fbd93936c631b7b3b29dc', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:157}] to localhost:27017
+2020-01-28 10:35:27.589  INFO 6748 --- [cluster-ClusterId{value='5e2fbd93936c631b7b3b29dc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2456600}
+2020-01-28 10:35:27.590  INFO 6748 --- [cluster-ClusterId{value='5e2fbd93936c631b7b3b29dc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:35:28.065  INFO 6748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:35:28.203  INFO 6748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:35:28.205  INFO 6748 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.471 seconds (JVM running for 3.24)
+2020-01-28 10:35:31.874  INFO 6748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:35:31.875  INFO 6748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:35:31.880  INFO 6748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-01-28 10:36:17.392  INFO 6748 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 10:36:17.394  INFO 6748 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:36:20.531  INFO 9804 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 9804 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:36:20.535  INFO 9804 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:36:21.045  INFO 9804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:36:21.099  INFO 9804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:36:21.432  INFO 9804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:36:21.441  INFO 9804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:36:21.441  INFO 9804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:36:21.511  INFO 9804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:36:21.512  INFO 9804 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 936 ms
+2020-01-28 10:36:21.949  INFO 9804 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:36:21.949  INFO 9804 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:36:21.993  INFO 9804 --- [cluster-ClusterId{value='5e2fbdc90bd3530d86a5c963', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:158}] to localhost:27017
+2020-01-28 10:36:21.997  INFO 9804 --- [cluster-ClusterId{value='5e2fbdc90bd3530d86a5c963', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2567400}
+2020-01-28 10:36:21.998  INFO 9804 --- [cluster-ClusterId{value='5e2fbdc90bd3530d86a5c963', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:36:22.494  INFO 9804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:36:22.640  INFO 9804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:36:22.642  INFO 9804 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.451 seconds (JVM running for 3.217)
+2020-01-28 10:36:35.283  INFO 9804 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:36:35.284  INFO 9804 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:36:35.290  INFO 9804 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-01-28 10:36:35.356  INFO 9804 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:159}] to localhost:27017
+2020-01-28 10:40:28.136  INFO 9804 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 10:40:28.138  INFO 9804 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:40:28.142  INFO 9804 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:159}] to localhost:27017 because the pool has been closed.
+2020-01-28 10:40:31.351  INFO 8844 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 8844 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:40:31.357  INFO 8844 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:40:31.896  INFO 8844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:40:31.958  INFO 8844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:40:32.322  INFO 8844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:40:32.330  INFO 8844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:40:32.331  INFO 8844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:40:32.408  INFO 8844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:40:32.409  INFO 8844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 983 ms
+2020-01-28 10:40:32.851  INFO 8844 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:40:32.852  INFO 8844 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:40:32.896  INFO 8844 --- [cluster-ClusterId{value='5e2fbec4c2110715afbac314', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:160}] to localhost:27017
+2020-01-28 10:40:32.900  INFO 8844 --- [cluster-ClusterId{value='5e2fbec4c2110715afbac314', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2717000}
+2020-01-28 10:40:32.901  INFO 8844 --- [cluster-ClusterId{value='5e2fbec4c2110715afbac314', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:40:33.352  INFO 8844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:40:33.499  INFO 8844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:40:33.501  INFO 8844 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.529 seconds (JVM running for 3.394)
+2020-01-28 10:41:06.725  INFO 8844 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:41:06.726  INFO 8844 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:41:06.731  INFO 8844 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-01-28 10:41:06.758  WARN 8844 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'goodsName' is not present]
+2020-01-28 10:41:27.474  INFO 8844 --- [http-nio-8080-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:161}] to localhost:27017
+2020-01-28 10:45:34.663  INFO 8844 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 10:45:34.665  INFO 8844 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:45:34.668  INFO 8844 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:161}] to localhost:27017 because the pool has been closed.
+2020-01-28 10:45:37.866  INFO 3624 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 3624 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:45:37.873  INFO 3624 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:45:38.395  INFO 3624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:45:38.458  INFO 3624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:45:38.821  INFO 3624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:45:38.829  INFO 3624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:45:38.830  INFO 3624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:45:38.903  INFO 3624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:45:38.904  INFO 3624 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 992 ms
+2020-01-28 10:45:39.368  INFO 3624 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:45:39.368  INFO 3624 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:45:39.417  INFO 3624 --- [cluster-ClusterId{value='5e2fbff723ccb61ade246981', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:162}] to localhost:27017
+2020-01-28 10:45:39.421  INFO 3624 --- [cluster-ClusterId{value='5e2fbff723ccb61ade246981', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2931700}
+2020-01-28 10:45:39.422  INFO 3624 --- [cluster-ClusterId{value='5e2fbff723ccb61ade246981', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:45:39.891  INFO 3624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:45:40.043  INFO 3624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:45:40.046  INFO 3624 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.565 seconds (JVM running for 3.434)
+2020-01-28 10:45:52.398  INFO 3624 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:45:52.399  INFO 3624 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:45:52.406  INFO 3624 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-01-28 10:45:52.440  WARN 3624 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'goodsName' is not present]
+2020-01-28 10:46:31.279  INFO 3624 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 10:46:31.281  INFO 3624 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:46:34.615  INFO 10844 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 10844 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 10:46:34.618  INFO 10844 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 10:46:35.106  INFO 10844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 10:46:35.162  INFO 10844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 4 MongoDB repository interfaces.
+2020-01-28 10:46:35.501  INFO 10844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 10:46:35.509  INFO 10844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 10:46:35.509  INFO 10844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 10:46:35.580  INFO 10844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 10:46:35.580  INFO 10844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 923 ms
+2020-01-28 10:46:36.008  INFO 10844 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 10:46:36.008  INFO 10844 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 10:46:36.051  INFO 10844 --- [cluster-ClusterId{value='5e2fc03008e43f3044dad58a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:163}] to localhost:27017
+2020-01-28 10:46:36.056  INFO 10844 --- [cluster-ClusterId{value='5e2fc03008e43f3044dad58a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3367300}
+2020-01-28 10:46:36.057  INFO 10844 --- [cluster-ClusterId{value='5e2fc03008e43f3044dad58a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 10:46:36.501  INFO 10844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 10:46:36.648  INFO 10844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 10:46:36.650  INFO 10844 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.401 seconds (JVM running for 3.239)
+2020-01-28 10:46:42.583  INFO 10844 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 10:46:42.584  INFO 10844 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 10:46:42.598  INFO 10844 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-28 10:46:42.844  INFO 10844 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:164}] to localhost:27017
+2020-01-28 11:55:15.961  INFO 10844 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-28 11:55:15.990  INFO 10844 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-28 11:55:15.998  INFO 10844 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:164}] to localhost:27017 because the pool has been closed.
+2020-01-28 11:55:19.962  INFO 1516 --- [main] com.shreeya.task1.Task1Application       : Starting Task1Application on DESKTOP-VTLNIVC with PID 1516 (C:\Users\shree\git\spring-mongodb-task\task1\bin\main started by shree in C:\Users\shree\git\spring-mongodb-task\task1)
+2020-01-28 11:55:19.966  INFO 1516 --- [main] com.shreeya.task1.Task1Application       : No active profile set, falling back to default profiles: default
+2020-01-28 11:55:20.500  INFO 1516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-28 11:55:20.559  INFO 1516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 4 MongoDB repository interfaces.
+2020-01-28 11:55:20.910  INFO 1516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-28 11:55:20.918  INFO 1516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-28 11:55:20.918  INFO 1516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-28 11:55:20.990  INFO 1516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-28 11:55:20.990  INFO 1516 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 984 ms
+2020-01-28 11:55:21.517  INFO 1516 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-28 11:55:21.517  INFO 1516 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-01-28 11:55:21.562  INFO 1516 --- [cluster-ClusterId{value='5e2fd04d73c9a66753e2e25f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:165}] to localhost:27017
+2020-01-28 11:55:21.566  INFO 1516 --- [cluster-ClusterId{value='5e2fd04d73c9a66753e2e25f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2734000}
+2020-01-28 11:55:21.567  INFO 1516 --- [cluster-ClusterId{value='5e2fd04d73c9a66753e2e25f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-01-28 11:55:22.030  INFO 1516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-28 11:55:22.181  INFO 1516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-28 11:55:22.184  INFO 1516 --- [main] com.shreeya.task1.Task1Application       : Started Task1Application in 2.591 seconds (JVM running for 3.531)
+2020-01-28 11:56:01.817  INFO 1516 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-28 11:56:01.818  INFO 1516 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-28 11:56:01.825  INFO 1516 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-01-28 11:56:02.120  INFO 1516 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:166}] to localhost:27017

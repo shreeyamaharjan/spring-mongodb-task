@@ -8,8 +8,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+
+import com.mongodb.client.result.UpdateResult;
 
 
 @Service
@@ -47,10 +49,21 @@ public class GoodsService {
 		mongoTemplate.remove(query,Goods.class);
 	}
 	
-	public Goods updateGoods(Goods goods) {
+	/*public Goods updateGoods(Goods goods) {
 		return mongoTemplate.save(goods);
-	}
+	}*/
 
+	
+	public UpdateResult updateGoods(Goods goods) {
+		Query query=new Query();
+		query.addCriteria(Criteria.where("goodsId").is(goods.getGoodsId()));
+		//mongoTemplate.save(goodsId);
+		
+		Update update=new Update();
+		update.set("goodsName",goods.getGoodsName());
+		update.set("rate", goods.getRate());
+		return mongoTemplate.updateFirst(query,update,Goods.class);
+	}
 	
 	
 	public List<Goods> findByRateRange(int lowerBound,int upperBound){
