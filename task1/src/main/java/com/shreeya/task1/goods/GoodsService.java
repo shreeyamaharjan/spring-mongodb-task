@@ -57,7 +57,7 @@ public class GoodsService {
 	public UpdateResult updateGoods(Goods goods) {
 		Query query=new Query();
 		query.addCriteria(Criteria.where("goodsId").is(goods.getGoodsId()));
-		//mongoTemplate.save(goodsId);
+		
 		
 		Update update=new Update();
 		update.set("goodsName",goods.getGoodsName());
