@@ -18,5 +18,6 @@ public interface CustomerRepository  extends MongoRepository<Customer, String> ,
 	
 	@Query(value="{'address':{$regex:?0,$options:'i'}}")
 	Page<Customer> findByAddress(String address,Pageable pageable);
-
+	Object findOne(String string);
+	
 }

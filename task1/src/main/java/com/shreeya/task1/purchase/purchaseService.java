@@ -24,15 +24,15 @@ public class purchaseService {
 	}
 	
 	public List<purchaseHistory> getByGoodsId(String goodsId){
-		List<purchaseHistory>history=new ArrayList<>();
-		history=this.purchaserepository.getByGoodsId(goodsId);
-		return history;
+		
+		return this.purchaserepository.getByGoodsId(goodsId);
+		
 	}
 	
 	public List<purchaseHistory> getByCustomerId(String customerId){
-		List<purchaseHistory>history=new ArrayList<>();
-		history=this.purchaserepository.getByCustomerId(customerId);
-		return history;
+		
+		return this.purchaserepository.getByCustomerId(customerId);
+		
 	}
 	
 	public void deletepurchase(String goodsId) {

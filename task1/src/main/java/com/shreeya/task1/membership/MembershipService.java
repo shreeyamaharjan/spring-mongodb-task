@@ -30,12 +30,12 @@ public class MembershipService {
 		return null;
 	}
 	
-	public void saveMembership(Membership membership) {
-		membershipRepository.save(membership);
+	public  Membership saveMembership(Membership membership) {
+		return membershipRepository.save(membership);
 	}
 	
-	public void updateMembership(Membership membership) {
-		membershipRepository.save(membership);
+	public Membership updateMembership(Membership membership) {
+		return membershipRepository.save(membership);
 	}
 	
 	public void deleteMembership(String membershipId) {
